@@ -1,3 +1,5 @@
+let count = 0;
+
 window.onload = function initAll() {
   if (document.getElementById) {
     document.getElementById("reload").onclick = anotherCard;
@@ -9,11 +11,14 @@ window.onload = function initAll() {
 
   $(document).ready(function () {
     $('td').click(function () {
-        console.log(this.id)
         //Check to see if background color is set or if it's set to white.
-        console.log(this.style.background)
         if(this.style.background == "" || this.style.background == "rgb(255, 114, 64)" || this.style.background =="rgb(255, 108, 67)" || this.style.background =="rgb(255, 103, 70)" || this.style.background =="rgb(255, 97, 74)" || this.style.background =="rgb(255, 91, 78)") {
+            count++;
 
+            if(count === 23){
+              var div = document.getElementById('taMelado');
+              div.innerHTML += `<div class="animate one"><span>T</span><span>A</span> &nbsp; <span>M</span><span>E</span><span>L</span><span>A</span><span>D</span><span>O</span></div>`;
+            }
             $(this).css('background', '#0CB377');
             $(this).css('color', '#FEF96D');
         }
@@ -33,6 +38,13 @@ window.onload = function initAll() {
           if(this.id == "square19" || this.id == "square20" || this.id == "square21" || this.id == "square22" || this.id == "square23" ) {
             $(this).css('background', 'rgb(255,91,78)');
           } 
+          count--;
+          
+          if(count < 23){
+            console.log('Entrei');
+            var div = document.getElementById('taMelado');
+            div.innerHTML = "";
+          }
         }
     });
 });
