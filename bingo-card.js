@@ -50,7 +50,7 @@ var usedNums = new Array(61);
 function setSquare(thisSquare){
   var currentSquare = "square" + thisSquare;
   var colPlace = new Array(0,1,2,3,4,0,1,2,3,4,0,1,3,4,0,1,2,3,4,0,1,2,3,4);
-  var colBasis = colPlace[thisSquare] * 12;
+  var colBasis = colPlace[thisSquare] * 15;
   var newNum = colBasis + getNewNum() + 1;
 
   do{
@@ -62,7 +62,7 @@ function setSquare(thisSquare){
 }
 
 function getNewNum() {
-  return Math.floor(Math.random() * 12);
+  return Math.floor(Math.random() * 15);
 }
 
 function anotherCard() {

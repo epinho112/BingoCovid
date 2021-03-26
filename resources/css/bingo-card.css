@@ -55,3 +55,7 @@ th, td {
 }
 
 /* Bingo Card Formatin */
+td[id^='s'] {
+    height: 48;
+	width: 26;
+}
