@@ -56,8 +56,8 @@ th, td {
 
 /* Bingo Card Formatin */
 td[id^='s'] {
-    height: 72;
-	width: 72;
+    height: 50%;
+	width: 72px;
 }
 
 /* Animation */
@@ -98,7 +98,7 @@ td[id^='s'] {
 .animate span:nth-of-type(9) {
   animation-delay: .4s;
 }
-/* .animate span:nth-of-type(10) {
+.animate span:nth-of-type(10) {
   animation-delay: .45s;
 }
 .animate span:nth-of-type(11) {
@@ -130,7 +130,7 @@ td[id^='s'] {
 }
 .animate span:nth-of-type(20) {
   animation-delay: .95s;
-} */
+}
 
 
 /* Animation One */
