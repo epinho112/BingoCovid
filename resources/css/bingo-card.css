@@ -1,0 +1,57 @@
+html {
+	box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+	box-sizing: inherit;
+  }
+
+body {
+	background-color: white;
+	color: #FEF96D;
+	font-size: 20px;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	/* background-color: teal; */
+	background-image: linear-gradient(to bottom, #ff9936, #ff9037, #ff8739, #ff7e3b, #ff753e, #ff6c43, #ff6448, #ff5b4e, #ff5257, #ff4861, #ff3f6b, #ff3675);
+}
+
+div img{
+	height: 30%;
+	width: 100%;
+	opacity: 1;
+}
+
+h1, th {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+	font-size: 28px;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	margin-left: auto;
+    margin-right: auto;
+	/* background-color: rgba(204, 171, 38, .8); */
+}
+
+th, td {
+	padding: 10px;
+	border: 2px #666 solid;
+	text-align: center;
+	font-size: 24px;
+}
+
+#free {
+	background-color: #0CB377;
+}
+
+.number-square{
+	width: 20%;
+}
+
+/* Bingo Card Formatin */
